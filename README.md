@@ -13,7 +13,7 @@ To use this model, you can load it from the Hugging Face Model Hub using the fol
 ```python
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
 
-model_name = "Akazi/bert-base-multilingual-uncased"
+model_name = "/bert-base-multilingual-uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 
@@ -73,11 +73,3 @@ The app will be accessible at `http://localhost:8501`.
 ### Streamlit Web Application Link
 
 You can also access the deployed Streamlit app here: [Streamlit App](https://bax453.streamlit.app/)
-
-## License
-
-This model is licensed under the [MIT License](LICENSE).
-
-## Credits
-
-This model and web application were developed by Abdullah Kazi, Maanvee Mehrotra, Avantika Goyal (goyalavantika@gmail.com), Shivank Chandra, and Anurag Vedagiri(anurag.vedagiri@gmail.com) using the Hugging Face Transformers library and the BERT base multilingual model.
